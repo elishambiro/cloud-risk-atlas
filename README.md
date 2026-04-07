@@ -1,5 +1,7 @@
 # Cloud Risk Atlas
 
+![Dashboard](docs/screenshot-dashboard.png)
+
 Cloud Risk Atlas is an AWS cloud security posture project built to showcase practical DevOps and cloud security engineering skills. It scans one AWS account per scan target in one chosen region, normalizes infrastructure into a graph, calculates posture findings, and highlights attack paths through an interactive frontend.
 
 ## What It Does
