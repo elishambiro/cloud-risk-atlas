@@ -33,6 +33,7 @@ jobs:
       - name: Run backend unit tests
         env:
           PYTHONPATH: backend
+          DATABASE_URL: postgresql+asyncpg://test:test@localhost/test
         run: python -m unittest discover -s backend/tests -p "test_*.py" -v
 
   frontend:
