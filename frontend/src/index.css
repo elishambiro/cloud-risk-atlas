@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    @apply h-full bg-gray-950 text-gray-100;
+  }
+}
+
+@layer components {
+  .react-flow__controls {
+    @apply overflow-hidden rounded-2xl border border-white/10 bg-slate-950/80 shadow-[0_20px_60px_rgba(15,23,42,0.45)] backdrop-blur-xl;
+  }
+
+  .react-flow__controls-button {
+    @apply h-10 w-10 border-b border-white/10 bg-transparent text-slate-300 transition-colors;
+  }
+
+  .react-flow__controls-button:hover {
+    @apply bg-white/5 text-white;
+  }
+
+  .react-flow__controls-button svg {
+    fill: currentColor;
+  }
+
+  .react-flow__minimap {
+    @apply overflow-hidden rounded-2xl border border-white/10 bg-slate-950/80 shadow-[0_20px_60px_rgba(15,23,42,0.45)] backdrop-blur-xl;
+  }
+
+  .react-flow__attribution {
+    @apply rounded-full border border-white/10 bg-slate-950/80 px-2 py-1 text-[10px] text-slate-400 backdrop-blur-xl;
+  }
+
+  .react-flow__edge-path {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .graph-canvas {
+    background:
+      radial-gradient(circle at top, rgba(56, 189, 248, 0.08), transparent 35%),
+      radial-gradient(circle at bottom right, rgba(249, 115, 22, 0.06), transparent 28%),
+      linear-gradient(180deg, rgba(2, 6, 23, 0.98), rgba(15, 23, 42, 0.94));
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.gray.700') transparent;
+  }
+}

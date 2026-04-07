@@ -1,0 +1,19 @@
+{
+  "agents": {
+    "agent-1775354166872-z9p12o": {
+      "agentId": "agent-1775354166872-z9p12o",
+      "agentType": "security-auditor",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "provider": "anthropic",
+        "task": "Audit the Cloud Risk Atlas application for bugs. Check backend/app/ Python files and frontend/src/ TypeScript files. Focus on: missing error handling, API mismatches, logic errors, and runtime issues."
+      },
+      "createdAt": "2026-04-05T01:56:06.876Z",
+      "model": "sonnet",
+      "modelRoutedBy": "router"
+    }
+  },
+  "version": "3.0.0"
+}
